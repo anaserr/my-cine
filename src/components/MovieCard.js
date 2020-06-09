@@ -1,0 +1,36 @@
+import React from 'react';
+import { faThumbsUp,faThumbsDown, faHeart as faHeartFull, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
+import { faHeart } from "@fortawesome/free-regular-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+const MovieCard = ({movie}) => {
+    const likesWidth = (100 * movie.likes)/(movie.likes + movie.dislikes) ;
+    const dislikesWidth = (100 * movie.dislikes)/(movie.likes + movie.dislikes) ;
+    return (
+        <div style={{background: 'linear-gradient(46deg, rgb(0, 0, 0), rgba(30, 30, 17, 0.8))',color:'#fff', border: '1px solid black',minWidth: '195px', height: '250px', margin: '5px 0', position: 'relative'}}>
+            <button style={{position: 'absolute', top: '2px', right: '2px',border: '0',outline: 'none', fontSize: '25px',background: 'none', color: '#eed522'}}>
+                <FontAwesomeIcon icon={faHeartFull} />
+            </button>
+            <div style={{position: 'absolute', top: '20px', left: '5px', textAlign: 'left'}}>
+                <div style={{color: '#fff', fontSize: '34px', marginBottom: '5px', fontWeight: 'bold', wordBreak: 'break-word'}}>{movie.title}</div>
+                <div style={{color: '#eed522',fontSize: '15px', fontStyle: 'italic'}}>{movie.category}</div>
+            </div>
+            
+            <button style={{position: 'absolute', bottom: '28px', left: '0px',border: '0',outline: 'none', fontSize: '16px',background: 'none', color: '#fff'}}>
+                    <FontAwesomeIcon icon={faTrashAlt} />
+                </button>
+
+            <div style={{position: 'absolute', bottom: '3px', left: '0px', textAlign: 'left', width: '100%',height: '5px', display: 'flex', color: '#fff'}}>
+                <div style={{background: '#bababa', width: likesWidth+'%'}}></div>
+                <div style={{background: '#4a4a4a', width: dislikesWidth+'%'}}></div>
+            </div>
+
+            <div style={{position: 'absolute', bottom: '10px', left: '0px',width: '100%', display: 'flex', justifyContent: 'space-around'}}>
+                <div style={{display: 'flow-root', color: '#bababa'}}><FontAwesomeIcon icon={faThumbsUp} style={{margin: '0 5px'}}/>{movie.likes}</div>
+                <div style={{display: 'flow-root', color: '#bababa'}}><FontAwesomeIcon icon={faThumbsDown} style={{margin: '0 5px -2px 5px'}}/>{movie.dislikes}</div>
+            </div>
+        </div>
+    );
+};
+
+export default MovieCard;
