@@ -1,0 +1,13 @@
+h2{
+    margin: 10px 10px 10px auto;
+}
+.SelectCateg{
+    margin: auto auto auto 10px;
+    border: 0;
+    width: 170px;
+    /* min-height: 96px; */
+}
+.CatBox{
+    display: inline-flex;
+    width: 100%;
+}

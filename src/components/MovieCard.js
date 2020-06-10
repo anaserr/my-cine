@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { faThumbsUp,faThumbsDown, faHeart as faHeartFull, faTrashAlt, faHeartBroken } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import '../MovieCard.css'
+import '../assets/MovieCard.css'
 
 const MovieCard = ({movie, handleDelete}) => {
     const likesWidth = (100 * movie.likes)/(movie.likes + movie.dislikes) ;
@@ -34,7 +34,7 @@ const MovieCard = ({movie, handleDelete}) => {
                 <div className="Cat" >{movie.category}</div>
             </div>
             
-            <button onClick={(e)=>handleDelete(movie.id)} className="BtnDelete">
+            <button onClick={(e)=>handleDelete(movie)} className="BtnDelete">
                 <FontAwesomeIcon icon={faTrashAlt} />
             </button>
 
