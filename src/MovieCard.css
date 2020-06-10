@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Asap');
+.Card{
+    background: linear-gradient(46deg, rgb(0, 0, 0), rgba(30, 30, 17, 0.8));
+    color: #fff;
+    border: 1px solid black;
+    min-width: 195px; 
+    height: 250px;
+    margin: 5px 0;
+    position: relative;
+}
+button{
+    position: absolute;
+    border:  0;
+    outline: none;
+    background: none;
+}
+.BtnDelete{
+    bottom: 35px;
+    left: 0px;
+    font-size: 16px;
+    color: #fff;
+}
+.BtnLike{
+    top: 2px;
+    right: 2px;
+    font-size: 25px;
+    color: #eed522;
+}
+.Title-Cat{
+    position: absolute;
+    top: 27px;
+    left: 5px;
+    text-align: left;
+    font-family: 'Asap';
+}
+.Title{
+    color: #fff;
+    font-size: 34px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    word-break: break-word;
+}
+.Cat{
+    color: #eed522;
+    font-size: 15px;
+    font-style: italic;
+}
+.LikesBar{
+    position: absolute;
+    bottom: 3px;
+    left: 0px;
+    text-align: left;
+    width: 100%;
+    height: 5px;
+    display: flex;
+    color: #fff;
+}
+.LikesNumber{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.LikesNumber > div {
+    display: flow-root; 
+    color:  #bababa
+}

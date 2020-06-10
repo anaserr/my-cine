@@ -19,7 +19,7 @@ const HomePage = () => {
         }
     }, [movies$])
 
-    const deleteMovie = (e,id) => {
+    const deleteMovie = (id) => {
         const res = window.confirm('Are you sure you wanna delete this movie ?')
         const tab = [...movieList.filter(item => item.id  !== id)]
 
