@@ -1,0 +1,5 @@
+export const FETCH_MOVIES = 'FETCH_MOVIES';
+export const FILTER_MOVIES = 'FILTER_MOVIES';
+export const DELETE_MOVIE = 'DELETE_MOVIE';
+export const CHANGE_PER_PAGE = 'CHANGE_PER_PAGE';
+export const NAVIGATE = 'NAVIGATE';
