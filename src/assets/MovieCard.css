@@ -3,9 +3,9 @@
     background: linear-gradient(46deg, rgb(0, 0, 0), rgba(30, 30, 17, 0.8));
     color: #fff;
     border: 1px solid black;
-    min-width: 195px; 
-    height: 250px;
-    margin: 5px 0;
+    width: 20%; 
+    height: 255px;
+    margin: 7px;
     position: relative;
 }
 button{
@@ -66,4 +66,25 @@ button{
 .LikesNumber > div {
     display: flow-root; 
     color:  #bababa
+}
+
+@media screen and (max-width: 900px){
+  .Card{
+      width: 23%;
+  }
+}
+@media screen and (max-width: 700px){
+  .Card{
+      width: 45%;
+  }
+}
+@media screen and (max-width: 425px){
+  .Card{
+      width: 40%;
+  }
+}
+@media screen and (max-width: 375px){
+  .Card{
+      width: 80%;
+  }
 }

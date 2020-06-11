@@ -1,0 +1,39 @@
+.PageContainer{
+    height: 45px;
+    display: inline-grid;
+    grid-template-columns: 10% auto 10%;
+    grid-template-rows: auto;
+    width: 100%;
+    background-color: #eed522;
+    font-family: 'Asap';
+}
+.NavBtn{
+    margin: auto;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    transition: background 0.8s;
+    font-size: 22px;
+}
+.NavBtn:active {
+    background-size: 90%;
+    background: radial-gradient(#978d2e8e, #eed522);
+    transition: background 0s
+}
+.SelectedNbr{
+    border: 1px solid grey;
+    background-color: #bababa;
+    height: 45px;
+    width: 35px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.PageContainer button {
+    position: relative;
+}
+.PagBtn{
+    height: 45px;
+    width: 35px;
+    font-size: 16px;
+}
